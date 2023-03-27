@@ -1,0 +1,426 @@
+/******************** Global Styles *********/
+html{
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #003366;
+  --secondary-color: #a1a1a1;
+  --accent-color: #ff9900;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/************************************* Header Styles ***********************/
+.header {
+  background-color:#1e2328;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-family: var(--font-secondary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  /* transition: background-color 0.3s ease; */
+}
+
+nav ul li a:hover {
+  background-color: var(--accent-color);
+}
+/**************************************** Hero Section Styles *******************/
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 50px;
+  background-color: #00bfff;
+  margin-top: 60px;
+  
+
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.hero-text h1 {
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  background-color: var(--accent-color);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.hero-text button:hover {
+  background-color: #cc7a00;
+}
+
+.hero-image img {
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/***************************************** About Section Styles *****************/
+#about {
+  background-color: #b2e9e9;
+  padding: 60px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#about .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/************************************** Courses Section Styles *******************/
+.courses {
+  padding: 50px;
+  background-color: var(--primary-color);
+  color: #fff;
+  
+}
+
+.courses h2 {
+  font-family: var(--font-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.course-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.course {
+  width: calc(33.33% - 20px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+}
+
+.course img {
+  margin-bottom: 20px;
+}
+
+.course h3 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.course p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+
+/************************************** Style for Admission Section ***************/
+
+.admission-section {
+  background-color: #f6f6f6;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-12 {
+  width: 100%;
+}
+.col-12 ol {
+  margin: 20px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.button {
+  display: block;
+  width: 200px;
+  margin: 50px auto 0;
+  background-color: #2e7d32;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #2e7d32;
+  border: 2px solid #2e7d32;
+}
+
+/***************************************** Apply Now Form *********************/
+.form-section {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f5f5e7;
+}
+
+.form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2e8b57;
+}
+
+/******************************************** Contact-Section ********************/
+
+#contact-us {
+  background-color: #bbca9c;
+  padding: 50px 0;
+}
+
+#contact-us h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+#contact-us .row > div {
+  margin-bottom: 30px;
+}
+
+#contact-us h3:first-of-type {
+  color: #ffa500;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#contact-us h3:last-of-type {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/*******************************************Footer*********************************/
+
+.footer {
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
+}
